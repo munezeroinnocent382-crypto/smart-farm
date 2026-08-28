@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f5f5f5;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 20px 0; */
+  background-color: white;
+  color: #333;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+nav {
+  /* background-color: red; */
+  width: 1200px;
+  display: flex;
+  gap: 20px;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  /* width: 100%; */
+  margin: 0 auto;
+}
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  width: 90px;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: color 0.3s ease;
+}
+nav a:hover,
+.active {
+  color: black;
+  background-color: green;
+}
+.a-logo:hover {
+  background-color: transparent;
+}
+@media (max-width: 760px) {
+  nav a {
+    display: flex;
+    flex-direction: column;
+  }
+  .menu {
+    display: block;
+  }
+  .list {
+    display: none;
+  }
+  .container {
+    width: 100%;
+    padding: 20px;
+  }
+}
+
+.empty {
+  padding-bottom: 160px;
+}
+
+.end {
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-around; */
+  padding: 10px;
+  margin: 40px;
+  /* position: fixed; */
+  /* bottom: 0;
+  left: 0;
+  right: 0; */
+  /* z-index: 1000; */
+}
+.smart-frm img {
+  border-radius: 50%;
+  width: 100px;
+  margin-bottom: 10px;
+}
+.smart-frm p {
+  width: 200px;
+  font-size: x-large;
+  color: black;
+}
+
+.link h2 {
+  color: green;
+  margin-bottom: 10px;
+}
+.link {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.link div a {
+  text-decoration: none;
+  color: #2ea3f2;
+  gap: 10px;
+}
+
+.link div a:hover,
+.active {
+  color: green;
+  background-color: white;
+}
+
+.contact h2 {
+  color: green;
+}
+.contact img {
+  width: 50px;
+  margin-top: 5px;
+  transition: 0.3s;
+  border-radius: 5px;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+/* .contact img:hover {
+  color: green;
+  transition: scale(1.2);
+} */
+.contact .tik {
+  margin-left: 20px;
+}
+
+.contact img:hover,
+.active {
+  color: green;
+  background-color: black;
+}
+.pp {
+  /* position: absolute; */
+  color: black;
+
+  /* margin: 0 auto; */
+}

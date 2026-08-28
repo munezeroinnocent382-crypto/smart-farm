@@ -7,7 +7,6 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: #f5f5f5;
 }
-
 .header {
   display: flex;
   justify-content: space-between;
@@ -52,9 +51,8 @@ nav a {
   transition: color 0.3s ease;
 }
 nav a:hover,
-.active,
-nav a.active {
-  color: white;
+.active {
+  color: black;
   background-color: green;
 }
 .a-logo:hover {
@@ -168,10 +166,33 @@ span {
   }
 }
 
+.container {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 20px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 760px) {
+  .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 5px;
+    /* background-color: red; */
+  }
+}
+
 .cage h1 {
   color: green;
   justify-content: center;
   text-align: center;
+  margin-top: 20px;
 }
 .container img {
   width: 80px;
@@ -204,9 +225,10 @@ span {
   justify-content: space-between;
   align-items: center;
   /* margin-bottom: 40px; */
-  background-color: rgb(219, 235, 219);
+  background-color: transparent;
   padding: 20px;
   border-radius: 10px;
+  border: 1px solid green;
 }
 
 .container .ctwo {
@@ -215,7 +237,8 @@ span {
   justify-content: space-between;
   align-items: center;
   /* margin-bottom: 40px; */
-  background-color: rgb(219, 235, 219);
+  background-color: transparent;
+  border: 1px solid green;
   /* margin-left: 30px; */
   /* margin-right: 30px; */
   padding: 20px;
@@ -227,7 +250,8 @@ span {
   justify-content: space-between;
   align-items: center;
   /* margin-bottom: 40px; */
-  background-color: rgb(219, 235, 219);
+  border: 1px solid green;
+  background-color: transparent;
   padding: 20px;
   border-radius: 10px;
 }
@@ -237,7 +261,8 @@ span {
   justify-content: space-between;
   align-items: center;
   /* margin-bottom: 40px; */
-  background-color: rgb(219, 235, 219);
+  background-color: transparent;
+  border: 1px solid green;
   /* margin-right: 30px; */
   padding: 20px;
   border-radius: 10px;
@@ -248,20 +273,20 @@ span {
   justify-content: space-between;
   align-items: center;
   /* margin-bottom: 40px; */
-  background-color: rgb(219, 235, 219);
+  background-color: transparent;
+  border: 1px solid green;
   padding: 20px;
   border-radius: 10px;
 }
 
 .lower {
   position: relative;
-  width: 1200px;
+  width: 700px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-content: start;
   align-items: center;
-
   gap: 20px;
   padding: 20px;
 }
@@ -352,8 +377,12 @@ span {
   padding-bottom: 160px;
 }
 
+.empty {
+  padding-bottom: 160px;
+}
+
 .end {
-  background-color: rgb(40, 54, 16);
+  background-color: rgb(127, 177, 41);
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -380,7 +409,7 @@ span {
 }
 .link div a {
   text-decoration: none;
-  color: #2ea3f2;
+  color: wheat;
   gap: 10px;
 }
 
@@ -420,47 +449,4 @@ span {
   color: black;
 
   /* margin: 0 auto; */
-}
-
-.navbar {
-  display: block;
-}
-.small-navbar {
-  display: none;
-}
-.small-navbar img {
-  width: 24px;
-}
-
-.small-navbar button {
-  padding: 5px 9px;
-  cursor: pointer;
-  background: transparent;
-  border-radius: 4px;
-  border: 2px solid green;
-}
-@media (max-width: 760px) {
-  .navbar {
-    /* display: none; */
-    position: absolute;
-    right: -300px;
-    width: 300px;
-    top: 110px;
-    height: calc(100vh - 100px);
-    background-color: rgba(0, 0, 0, 0.779);
-
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-
-    a {
-      color: white;
-      border-bottom: 1px solid white;
-      border-radius: 0;
-      margin-bottom: 10px;
-    }
-  }
-  .small-navbar {
-    display: block;
-  }
 }
