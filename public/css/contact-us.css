@@ -154,3 +154,45 @@ nav a:hover,
 
   /* margin: 0 auto; */
 }
+.navbar {
+  display: block;
+}
+.small-navbar {
+  display: none;
+}
+.small-navbar img {
+  width: 24px;
+}
+
+.small-navbar button {
+  padding: 5px 9px;
+  cursor: pointer;
+  background: transparent;
+  border-radius: 4px;
+  border: 2px solid green;
+}
+@media (max-width: 760px) {
+  .navbar {
+    /* display: none; */
+    position: absolute;
+    right: -300px;
+    width: 300px;
+    top: 110px;
+    height: calc(100vh - 100px);
+    background-color: rgba(0, 0, 0, 0.779);
+
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+
+    a {
+      color: white;
+      border-bottom: 1px solid white;
+      border-radius: 0;
+      margin-bottom: 10px;
+    }
+  }
+  .small-navbar {
+    display: block;
+  }
+}
